@@ -5,7 +5,7 @@ class Comply < Formula
   sha256 "$SHA"
 
   depends_on "go" => :build
-  depends_on :formula "pandoc"
+  depends_on "pandoc"
 
   def install
     ENV["GOPATH"] = buildpath
