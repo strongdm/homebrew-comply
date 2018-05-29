@@ -1,11 +1,10 @@
 class Comply < Formula
   desc "Compliance automation framework, focused on SOC2"
   homepage "https://comply.strongdm.com"
-  url "https://github.com/strongdm/comply/archive/v1.2.0.tar.gz"
-  sha256 "f04accca79f20cd67fa10290ecc3dcc6bdcafa3137484d83edff2fcf40b27b6d"
+  url "https://github.com/strongdm/comply/archive/v1.2.1.tar.gz"
+  sha256 "c71540fd7d0724507816e28e8f6173942955badc0374335073a9907306ddcd85"
 
   depends_on "go" => :build
-  depends_on "pandoc"
 
   def install
     ENV["GOPATH"] = buildpath
