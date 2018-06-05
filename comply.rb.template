@@ -15,8 +15,4 @@ class Comply < Formula
       bin.install "bin/comply"
     end
   end
-
-  test do
-    system "#{bin}/sdm", "logout"
-  end
 end
