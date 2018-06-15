@@ -1,8 +1,8 @@
 class Comply < Formula
   desc "Compliance automation framework, focused on SOC2"
   homepage "https://comply.strongdm.com"
-  url "https://github.com/strongdm/comply/archive/v1.2.4.tar.gz"
-  sha256 "b0e04a47db5fa32c13a0cde746031e7669f38e4feaf2855beb0af7c5431e8545"
+  url "https://github.com/strongdm/comply/archive/v1.2.5.tar.gz"
+  sha256 "b82323a288ba333459ecfce14199af05263fead28a03a1a019d29cc484b35c74"
 
   depends_on "go" => :build
 
@@ -21,21 +21,21 @@ class Comply < Formula
       #!/usr/bin/expect -f
       set timeout 2
       spawn #{bin}/comply init
-      send -- "Hello Corporation\\r"
+      send -- "Hello Corporation\r"
       expect "*Filename Prefix*"
-      send -- "\\r\\r\\r"
+      send -- "\r\r\r"
       expect "*GitHub*"
-      send -- "\\r"
+      send -- "\r"
       expect "*Configure github now*"
-      send -- "\\r\\r"
+      send -- "\r\r"
       expect "+:+"
-      send -- "thing\\r"
+      send -- "thing\r"
       expect "+:+"
-      send -- "thing\\r"
+      send -- "thing\r"
       expect "+:+"
-      send -- "thing\\r"
+      send -- "thing\r"
       expect "+:+"
-      send -- "thing\\r"
+      send -- "thing\r"
       expect "*Next steps*"
       expect eof
     EOS
