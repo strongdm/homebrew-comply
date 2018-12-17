@@ -1,8 +1,8 @@
 class Comply < Formula
   desc "Compliance automation framework, focused on SOC2"
   homepage "https://comply.strongdm.com"
-  url "https://github.com/strongdm/comply/archive/v1.3.4.tar.gz"
-  sha256 "b8834c29f6f38096a0175d9ded6af02cc16430fc2c59460bfbf1bfa5cff0f38a"
+  url "https://github.com/strongdm/comply/archive/v1.3.6.tar.gz"
+  sha256 "b8ed52f40b1b4caf43a3d07d153c59196ccff5a2e6b41d00654e031727e18f29"
 
   depends_on "go" => :build
 
